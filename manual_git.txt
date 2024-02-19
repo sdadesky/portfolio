@@ -1,0 +1,40 @@
+#enter powershell
+
+# adds to list of files selected to push
+PS C:\Users\sdade\Documents\Serge\hosting\github\portfolio> 
+git add .
+#git push
+# commit files on server
+PS C:\Users\sdade\Documents\Serge\hosting\github\portfolio> git commit -m "some messsage to denote what has changed"
+[master 3da5266] manually from windows 2 files
+ 5 files changed, 198 insertions(+), 16 deletions(-)
+ create mode 100644 resume.html
+ create mode 100644 resume2.html
+PS C:\Users\sdade\Documents\Serge\hosting\github\portfolio> git add .
+PS C:\Users\sdade\Documents\Serge\hosting\github\portfolio> git commit -m "manually from windows 2 files twice"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\sdade\Documents\Serge\hosting\github\portfolio> git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.41 KiB | 721.00 KiB/s, done.
+Total 7 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 4 local objects.
+To https://github.com/sdadesky/portfolio
+   9278f85..3da5266  master -> master
+PS C:\Users\sdade\Documents\Serge\hosting\github\portfolio> git push --set-upstream origin master
+
+
+
+*************************
+cd C:\Users\sdade\Documents\Serge\hosting\github\portfolio
+git init
+git add projects.html
+git commit -m "changed spelling of algorithmics"
+git push
+
